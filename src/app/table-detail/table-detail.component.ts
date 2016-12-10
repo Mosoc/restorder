@@ -1,3 +1,4 @@
+import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TableDetailComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private routes: Router) { }
 
   ngOnInit() {
+    this.route.params.subscribe(params =>{
+      console.log(params['id']);
+    })
+  }
+
+  back(){
+    this.routes.navigate(['tables',2,'Kev']);
+    let currentId = this.route.snapshot.params['id'];
   }
 
 }

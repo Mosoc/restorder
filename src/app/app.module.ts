@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { TableComponent } from './table/table.component';
 import { HistoryComponent } from './history/history.component';
 import { TableDetailComponent } from './table-detail/table-detail.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TableComponent,
     HistoryComponent,
-    TableDetailComponent
+    TableDetailComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
