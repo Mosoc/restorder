@@ -8,12 +8,12 @@ const routes: Routes = [
   {path: 'tables', component: TableComponent},
   {path: 'table',
       children: [
-        {path:'id, component: TableDetailComponent'},
+        {path:':id', component: TableDetailComponent},
         {path: '', redirectTo: '/tables', pathMatch:'full'}
       ]
   },
   {path: 'history', component: HistoryComponent},
-  {path: '', redirectTo:'/tables', pathMatch: 'full'}
+  {path: '', redirectTo: '/tables', pathMatch: 'full'}
 ];
 
 @NgModule({
