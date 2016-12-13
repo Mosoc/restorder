@@ -19,7 +19,7 @@
           </thead>
           <tbody>
           <tr>
-            <td>1</td>
+            <td>0</td>
             <td>12:30</td>
             <td>4</td>
             <td>250</td>
@@ -35,6 +35,15 @@
             <td>13:30</td>
             <td>leave without saying hello</td>
           </tr>
+          <tr *ngFor="let item of items; let i = index; trackBy: trackByFn">
+            <td>{{item}}</td>
+            <td>12:30</td>
+            <td>4</td>
+            <td>250</td>
+            <td>13:30</td>
+            <td>leave without saying hello</td>
+          </tr>
+
 
           </tbody>
         </table>
